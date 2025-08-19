@@ -1,7 +1,10 @@
-import Bootstrap from "./Bootsrap_Page";
+//import Bootstrap from "./Bootsrap_Page";
+import Parent from "./ChildrenParent";
+import Forward from "./Forward";
 import UserRef from "./InputRef";
 //import UserId from "./UserId";
-import StyledComponenet from "./styledComponent";
+//import StyledComponenet from "./styledComponent";
+//import Uncontrolled from "./Uncontrolled";
 
 function App() {
 
@@ -9,9 +12,13 @@ function App() {
     <div>
 
       {/*<UserId /> */}
-      <StyledComponenet />
-      <Bootstrap />
+      {/* <StyledComponenet /> */}
+      {/* <Bootstrap /> */}
       <UserRef />
+     {/*  <Uncontrolled /> */}
+      <Parent />
+      
+      {/*<Forward /> */}
 
     </div>
   )
