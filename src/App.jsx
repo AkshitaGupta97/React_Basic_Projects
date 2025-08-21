@@ -3,14 +3,21 @@
 //import Forward from "./Forward";
 //import UserRef from "./InputRef";
 //import UseFormStatus from "./useFormStatus";
-import DerivedComponents from "./DerivedComponents";
-import UserTransition from "./UseTransition";
+import { useState } from "react";
+//import DerivedComponents from "./DerivedComponents";
+//import UserTransition from "./UseTransition";
+import LiftState from "./LiftingStateUp";
+import LiftUp from "./LiftingUp";
+import UseActionState from "./UseActionState";
+
+//import UpdateStates from "./UpdateObjSates";
+//import UpdateArr from "./UpdateArrStates";
 //import UserId from "./UserId";
 //import StyledComponenet from "./styledComponent";
 //import Uncontrolled from "./Uncontrolled";
 
 function App() {
-
+  const [user, setUser] = useState('')
   return (
     <div>
 
@@ -24,8 +31,21 @@ function App() {
       {/*<Forward /> */}
 
       {/* < UseFormStatus /> */}
-      <UserTransition />
-      <DerivedComponents />
+      {/*
+           <UserTransition />
+          <DerivedComponents />
+       */}
+
+      <LiftUp setUser={setUser}/>
+      <LiftState user={user}/>
+
+      {/*
+      <UpdateStates />
+      <UpdateArr />
+      */}
+
+      <UseActionState />
+
     </div>
   )
 }
