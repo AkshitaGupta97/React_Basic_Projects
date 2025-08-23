@@ -6,9 +6,11 @@ const useToggle = (defaultValue) => {
     function toggleVal(val){
         if(typeof val === 'boolean'){
             setValue(val);
+            console.log("boolean value -> if");
         }
         else{
-            setValue(!val);
+            setValue(!value);
+            console.log("boolean value else -> toggle");
         }
     }
 

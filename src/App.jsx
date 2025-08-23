@@ -9,14 +9,16 @@
 //import LiftState from "./LiftingStateUp";
 //import LiftUp from "./LiftingUp";
 //import UseActionState from "./UseActionState";
-import ToggleCustom from "./ToggleCustom";
-import UseId from "./UseId";
-
+//import ToggleCustom from "./ToggleCustom";
+//import UseId from "./UseId";
 //import UpdateStates from "./UpdateObjSates";
 //import UpdateArr from "./UpdateArrStates";
 //import UserId from "./UserId";
 //import StyledComponenet from "./styledComponent";
 //import Uncontrolled from "./Uncontrolled";
+
+import CollegeContext from "./ContextApi_Project/CollegeContextApi";
+
 
 function App() {
 //  const [user, setUser] = useState('')
@@ -52,10 +54,11 @@ function App() {
 
       {/* <UseActionState /> */}
       
-      <UseId />
+      {/* <UseId /> */}
 
-      <ToggleCustom />
+      {/* <ToggleCustom />*/}
 
+        <CollegeContext />
 
     </div>
   )
