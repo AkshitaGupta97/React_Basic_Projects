@@ -14,25 +14,27 @@ function UserForm() {
     const terms = useId();
     const skill = useId();
 
+    const user = useId();
+
     return(
-        <form action="">
-            <label htmlFor={name}>Enter name</label>
-            <input id={name} type="text" placeholder="Enter name"/>
+        <form action="" style={{border:"2px solid blue", padding:"12px", marginTop:"12px"}}>
+            <label style={{color:"orange", padding:"6px", marginTop:"8px"}} htmlFor={user+"name"}>Enter name</label>
+            <input style={{color:"orange", padding:"6px", marginTop:"8px"}} id={user+"name"} type="text" placeholder="Enter name"/>
             <br />
-            <label htmlFor={name}>Enter name</label>
-            <input id={name} type="text" placeholder="Enter name"/>
+            <label style={{color:"orange", padding:"6px", marginTop:"8px"}} htmlFor={user+"name"}>Enter name</label>
+            <input style={{color:"orange", padding:"6px", marginTop:"8px"}} id={user+"name"} type="text" placeholder="Enter name"/>
             <br />
-            <label htmlFor={password}>Enter Password</label>
-            <input id={password} type="text" placeholder="Enter Password"/>
+            <label style={{color:"orange", padding:"6px", marginTop:"8px"}} htmlFor={user+"password"}>Enter Password</label>
+            <input style={{color:"orange", padding:"6px", marginTop:"8px"}} id={user+"password"} type="text" placeholder="Enter Password"/>
             <br />
-            <label htmlFor={password}>Enter password</label>
-            <input id={password} type="text" placeholder="Enter password"/>
+            <label style={{color:"orange", padding:"6px", marginTop:"8px"}} htmlFor={user+"password"}>Enter password</label>
+            <input style={{color:"orange", padding: "6px", marginTop:"8px"}} id={user+"password"} type="text" placeholder="Enter password"/>
             <br />
-            <label htmlFor={skill}>Enter Skills</label>
-            <input id={skill} type="checkbox" placeholder="Enter Skill"/>
+            <label style={{color:"orange", padding:"6px", marginTop:"8px"}} htmlFor={user+"skill"}>Enter Skills</label>
+            <input style={{color:"orange", padding:"6px", marginTop:"8px"}} id={user+"skill"} type="checkbox" placeholder="Enter Skill"/>
             <br />
-            <label htmlFor={skill}>Enter password</label>
-            <input id={skill} type="checkbox" placeholder="Enter skill"/>
+            <label style={{color:"orange", padding: "6px", marginTop:"8px"}} htmlFor={user+"terms"}>Enter terms</label>
+            <input style={{color:"orange", padding:"6px", marginTop:"8px"}} id={user+"terms"} type="range" placeholder="Enter skill"/>
 
 
         </form>

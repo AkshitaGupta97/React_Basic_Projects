@@ -3,12 +3,14 @@
 //import Forward from "./Forward";
 //import UserRef from "./InputRef";
 //import UseFormStatus from "./useFormStatus";
-import { useState } from "react";
+//import { useState } from "react";
 //import DerivedComponents from "./DerivedComponents";
 //import UserTransition from "./UseTransition";
-import LiftState from "./LiftingStateUp";
-import LiftUp from "./LiftingUp";
-import UseActionState from "./UseActionState";
+//import LiftState from "./LiftingStateUp";
+//import LiftUp from "./LiftingUp";
+//import UseActionState from "./UseActionState";
+import ToggleCustom from "./ToggleCustom";
+import UseId from "./UseId";
 
 //import UpdateStates from "./UpdateObjSates";
 //import UpdateArr from "./UpdateArrStates";
@@ -17,7 +19,7 @@ import UseActionState from "./UseActionState";
 //import Uncontrolled from "./Uncontrolled";
 
 function App() {
-  const [user, setUser] = useState('')
+//  const [user, setUser] = useState('')
   return (
     <div>
 
@@ -36,15 +38,24 @@ function App() {
           <DerivedComponents />
        */}
 
-      <LiftUp setUser={setUser}/>
+     {
+      /*
+       <LiftUp setUser={setUser}/>
       <LiftState user={user}/>
+      */
+     }
 
       {/*
       <UpdateStates />
       <UpdateArr />
       */}
 
-      <UseActionState />
+      {/* <UseActionState /> */}
+      
+      <UseId />
+
+      <ToggleCustom />
+
 
     </div>
   )
